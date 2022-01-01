@@ -1,26 +1,16 @@
 package com.example.android.quizapp;
 
-import android.app.Dialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    /*
-    Since Radio buttons can be selected only one out of 4 we don't need to initialized all radio buttons
-    Instead of that we will only initialized the Radio Group and only radio button which corresponds to correct answer
-    Clearing whole Radio Group is more efficient that clearing every single button one by one.
-    All these RadioGroup, CheckBox etc. will be initialized in the onCreate method, so this way more optimized since all
-    views will be initialized once.
-    */
+
     CheckBox question1_a, question1_b, question1_c, question1_d;
     RadioGroup question2;
     RadioButton question2_answer;
